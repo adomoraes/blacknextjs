@@ -1,6 +1,11 @@
+// next.config.js
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-};
+	reactStrictMode: true,
+	images: {
+		domains: ["store.storeimages.cdn-apple.com"],
+	},
+}
 
-export default nextConfig;
+export default nextConfig
