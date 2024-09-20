@@ -11,7 +11,7 @@ type ApiResponse = {
 
 export const getStaticProps: GetStaticProps = async () => {
 	const staticData = await fetch(
-		`${process.env.NEXT_PUBLIC_APIURL}/api/hello`
+		`${process.env.NEXT_PUBLIC_API_BASE_URL}/api/hello`
 	).then((res) => res.json())
 
 	return {
